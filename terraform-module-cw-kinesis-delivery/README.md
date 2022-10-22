@@ -32,7 +32,6 @@
 | <a name="input_kinesis_lg_retention_in_days"></a> [kinesis\_lg\_retention\_in\_days](#input\_kinesis\_lg\_retention\_in\_days) | Kinesis log group retention time in days | `number` | `7` | no |
 | <a name="input_log_group_names"></a> [log\_group\_names](#input\_log\_group\_names) | List of log groups to subscribe to with the log filter | `list(string)` | `[]` | no |
 | <a name="input_output_format"></a> [output\_format](#input\_output\_format) | CloudWatch metric stream output format | `string` | n/a | yes |
-| <a name="input_prefix"></a> [prefix](#input\_prefix) | Kinesis delivery stream prefix. | `string` | `"dt"` | no |
 | <a name="input_region"></a> [region](#input\_region) | The AWS region | `string` | n/a | yes |
 | <a name="input_s3_buffer_interval"></a> [s3\_buffer\_interval](#input\_s3\_buffer\_interval) | S3 buffer interval in seconds | `number` | `300` | no |
 | <a name="input_s3_buffer_size"></a> [s3\_buffer\_size](#input\_s3\_buffer\_size) | S3 buffer size in MB | `number` | `5` | no |
