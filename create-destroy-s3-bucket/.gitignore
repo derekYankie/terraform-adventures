@@ -1,0 +1,6 @@
+.DS_Store
+.dockerignore
+variables.tf
+.terraform
+.terraform.lock.hcl
+.terraform*
