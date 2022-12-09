@@ -1,4 +1,4 @@
-name: Auto build terraform docs and push changes back to PR
+name: CI Terraform Docs 
 on:
   - pull_request
 
@@ -10,11 +10,11 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.ref }}
 
-    - name: CI Terraform Docs
+    - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@main
       with:
-        find-dir: module
-        output-file: README.md
+        find-dir: aws-sns-topic-module
+        output-file: README.mds
         output-method: inject
         git-push: "true"
         template: |-
