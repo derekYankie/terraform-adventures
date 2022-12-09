@@ -1,6 +1,6 @@
 variable "prefix" {
   type        = string
-  description = "SNS Topic prefix"
+  description = "SNS Topic prefix."
   nullable    = false
   default     = "demo"
 }
