@@ -1,8 +1,8 @@
 variable "prefix" {
   type        = string
-  description = "Kinesis delivery stream prefix."
+  description = "SNS Topic prefix."
   nullable    = false
-  default     = "dt"
+  default     = "demo"
 }
 
 variable "region" {
