@@ -13,7 +13,7 @@ jobs:
     - name: CI Terraform Docs
       uses: terraform-docs/gh-actions@main
       with:
-        find-dir: '.module'
+        find-dir: .module
         output-file: README.md
         output-method: inject
         git-push: "true"
