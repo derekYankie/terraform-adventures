@@ -18,13 +18,13 @@ jobs:
         output-method: inject
         git-push: "true"
         template: |-
-      <!-- BEGIN_TF_DOCS -->
-      #### Table of Contents
-      1. [Usage](#usage)
-      2. [Requirements](#requirements)
-      3. [Providers](#Providers)
-      4. [Inputs](#inputs)
-      5. [Outputs](#outputs)
+          <!-- BEGIN_TF_DOCS -->
+          #### Table of Contents
+          1. [Usage](#usage)
+          2. [Requirements](#requirements)
+          3. [Providers](#Providers)
+          4. [Inputs](#inputs)
+          5. [Outputs](#outputs)
 
       # Usage
 
