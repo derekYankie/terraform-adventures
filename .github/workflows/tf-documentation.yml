@@ -26,7 +26,7 @@ jobs:
       4. [Inputs](#inputs)
       5. [Outputs](#outputs)
 
-      # Usage
+      ## Usage
 
       {{ .Content }}
       <!-- END_TF_DOCS -->
