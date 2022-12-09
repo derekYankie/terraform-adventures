@@ -13,7 +13,7 @@ jobs:
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@main
       with:
-        find-dir: aws-sns-topic-module
+        working-dir: aws-sns-topic-module
         output-file: README.mds
         output-method: inject
         git-push: "true"
