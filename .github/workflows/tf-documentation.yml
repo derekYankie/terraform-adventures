@@ -6,7 +6,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3.1.0
       with:
         ref: ${{ github.event.pull_request.head.ref }}
 
@@ -14,19 +14,19 @@ jobs:
       uses: terraform-docs/gh-actions@main
       with:
         find-dir: aws-sns-topic-module
-        output-file: README.mds
+        output-file: README.md
         output-method: inject
         git-push: "true"
-        template: |-
-          <!-- BEGIN_TF_DOCS -->
-          #### Table of Contents
-          1. [Usage](#usage)
-          2. [Requirements](#requirements)
-          3. [Providers](#Providers)
-          4. [Inputs](#inputs)
-          5. [Outputs](#outputs)
+        # template: |-
+        #   <!-- BEGIN_TF_DOCS -->
+        #   #### Table of Contents
+        #   1. [Usage](#usage)
+        #   2. [Requirements](#requirements)
+        #   3. [Providers](#Providers)
+        #   4. [Inputs](#inputs)
+        #   5. [Outputs](#outputs)
           
-          ## Usage
-          {{ .Content }}
-          <!-- END_TF_DOCS -->
+        #   ## Usage
+        #   {{ .Content }}
+        #   <!-- END_TF_DOCS -->
         indention: 3
