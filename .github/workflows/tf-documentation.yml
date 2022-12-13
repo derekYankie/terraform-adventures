@@ -13,7 +13,6 @@ jobs:
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@main
       with:
-        # find-dir: aws-sns-topic-module, terraform-module-cw-kinesis-delivery
         working-dir: aws-sns-topic-module, terraform-module-cw-kinesis-delivery
         output-file: README.md
         output-method: inject
