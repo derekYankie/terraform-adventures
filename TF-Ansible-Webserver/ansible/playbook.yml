@@ -4,7 +4,7 @@
   become_user: root
   become_method: sudo
   tasks:
-    - name: Enable nginx for amazon linux 2
+    - name: Enable Nginx for Amazon Linux 2
       shell: "amazon-linux-extras enable nginx1.12"
       become: yes
 
@@ -21,22 +21,21 @@
 
     - name: Creates directory
       file: 
-        path: "/var/www/miteshsharma.com"
+        path: "/var/www/cloudPanther.io"
         state: directory
 
     - name: Copy static files
       copy:
         src: "./files/static_website/"
-        dest: "/var/www/miteshsharma.com/"
+        dest: "/var/www/cloudPanther.io/"
         mode: 0644
 
     - name: Update static nginx config
       copy: 
         src: "./files/static_website.conf"
-        dest: "/etc/nginx/conf.d/miteshsharma.com.conf"
+        dest: "/etc/nginx/conf.d/cloudPanther.io.conf"
         mode: 0644
 
     - name: Restart Nginx
       service: name=nginx state=restarted
       become: yes
-
