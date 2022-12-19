@@ -20,12 +20,12 @@ Infrastructure 🏗:
 2. Generate execution `plan for AWS resources` :building_construction:
 
     ```bash
-    terraform apply
+    terraform plan
     ```
 3. Watch terraform `apply` :building_construction:
 
     ```bash
-    terraform plan | wc -l
+    terraform apply | wc -l
     ```
 ## Ansible
 Web Server PlayBook 👷📕
