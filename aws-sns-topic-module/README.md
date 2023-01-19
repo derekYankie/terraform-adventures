@@ -1,9 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
-![image](https://user-images.githubusercontent.com/18011667/202057364-579f4045-3c2f-48f3-8307-7789166ab5b0.png)
 #### Table of Contents
 1. [Usage](#usage)
 2. [Requirements](#requirements)
-3. [Providers](#Providers)
+3. [Providers](#providers)
 4. [Inputs](#inputs)
 5. [Outputs](#outputs)
 
