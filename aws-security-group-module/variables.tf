@@ -7,7 +7,7 @@ variable "rules" {
         },
         {
             port        = 22
-            proto      = "tcp"
+            proto       = "tcp"
             cidr_blocks = ["0.0.0.0/0"]
         }
     ]
